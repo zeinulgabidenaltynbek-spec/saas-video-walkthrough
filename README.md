@@ -40,12 +40,12 @@ npx playwright-core install ffmpeg
 
 ### Antigravity (Global)
 ```bash
-git clone https://github.com/<your-username>/saas-video-walkthrough.git ~/.gemini/config/skills/saas-video-walkthrough
+git clone https://github.com/zeinulgabidenaltynbek-spec/saas-video-walkthrough.git ~/.gemini/config/skills/saas-video-walkthrough
 ```
 
 ### Project-Local (Antigravity / Claude Code / Cursor)
 ```bash
-git clone https://github.com/<your-username>/saas-video-walkthrough.git .agents/skills/saas-video-walkthrough
+git clone https://github.com/zeinulgabidenaltynbek-spec/saas-video-walkthrough.git .agents/skills/saas-video-walkthrough
 ```
 
 Once installed, simply ask your AI coding agent:
