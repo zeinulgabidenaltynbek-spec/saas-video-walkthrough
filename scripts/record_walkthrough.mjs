@@ -210,6 +210,7 @@ async function runAction(page, action) {
   if (action.startsWith("click_tab:")) { await page.evaluate(() => window.scrollTo({ top: 0 })); await jsClick(page, action.slice(10), "button.tab-btn, [role='tab']"); await page.waitForTimeout(450); return; }
   if (action.startsWith("click_btn:")) { await jsClick(page, action.slice(10), "main button"); await page.waitForTimeout(400); return; }
   if (action.startsWith("click_primary_btn:")) { await jsClick(page, action.slice(18), "main button.btn-primary"); await page.waitForTimeout(400); return; }
+  if (action.startsWith("close_modal_then_btn:")) { await jsCloseModal(page); await jsClick(page, action.slice(21), "main button"); await page.waitForTimeout(400); return; }
   if (action.startsWith("close_modal_then_tab:")) { await jsCloseModal(page); await page.evaluate(() => window.scrollTo({ top: 0 })); await jsClick(page, action.slice(21), "button.tab-btn, [role='tab']"); await page.waitForTimeout(450); return; }
   if (action.startsWith("close_modal_then_tab_and_btn:")) {
     const [tab, btn] = action.slice(29).split("|");
