@@ -1,0 +1,66 @@
+[
+  {
+    "id": "01_team_and_roles",
+    "nav": "/team",
+    "privacyBlurSelectors": [".sidebar-logo"],
+    "scenes": [
+      {
+        "id": "01_tabs_overview",
+        "text": "In the Team section you have three tabs: Organizations, Users, and Roles. Let's walk through each tab and its modals.",
+        "badge": "3 Tabs: Orgs, Users, Roles",
+        "selector": "button.tab-btn",
+        "highlightParent": true,
+        "arrow": "bottom",
+        "dim": true,
+        "zoom": 1.0,
+        "padAfterMs": 350
+      },
+      {
+        "id": "02_tab1_table",
+        "text": "On the Organizations tab you see every partner account, plan tier, and status, plus quick buttons to edit or impersonate.",
+        "badge": "Organizations overview",
+        "selector": "table",
+        "closestSelector": ".shell-card",
+        "arrow": "top",
+        "dim": true,
+        "zoom": 1.0,
+        "padAfterMs": 350
+      },
+      {
+        "id": "03_tab1_modal",
+        "action": "click_primary_btn:New Organization",
+        "text": "Click New Organization to open the creation modal. Enter company details, select the billing plan, and create the owner account in one step.",
+        "badge": "Create Organization modal",
+        "selector": ".modal-card",
+        "arrow": "right",
+        "dim": false,
+        "zoom": 1.15,
+        "padAfterMs": 400
+      },
+      {
+        "id": "04_tab2_users",
+        "action": "close_modal_then_tab:Users",
+        "text": "Next, on the Users tab, you manage individual staff accounts, reset passwords, or deactivate access.",
+        "badge": "Users management",
+        "selector": "table",
+        "closestSelector": ".shell-card",
+        "arrow": "top",
+        "dim": true,
+        "zoom": 1.0,
+        "padAfterMs": 350
+      },
+      {
+        "id": "05_tab3_roles",
+        "action": "click_tab:Roles",
+        "text": "Finally, on the Roles tab, configure granular module permissions for every job title across the platform.",
+        "badge": "Roles & permissions matrix",
+        "selector": "table",
+        "closestSelector": ".shell-card",
+        "arrow": "top",
+        "dim": true,
+        "zoom": 1.12,
+        "padAfterMs": 450
+      }
+    ]
+  }
+]

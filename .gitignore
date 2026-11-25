@@ -1,0 +1,10 @@
+node_modules/
+audio/
+raw_video/
+output/
+preview*/
+*.mp4
+*.webm
+*.mp3
+*.log
+__pycache__/
